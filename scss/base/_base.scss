@@ -1,0 +1,50 @@
+// Base - global styles
+* {
+	outline: none;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	scroll-behavior: smooth;
+}
+
+html {
+	@include respond-to-width(600px) {
+		font-size: 130%;
+	}
+
+	@include respond-to-width(1024px) {
+		font-size: 100%;
+	}
+
+	// @include respond-to-w-and-h(2200px, 1200px) {
+	// 	font-size: 150%;
+	// }
+
+	// @include respond-to-height(2000px) {
+	// 	font-size: 250%;
+	// }
+}
+
+body {
+	color: $primary-color;
+}
+
+ul,
+li {
+	list-style: none;
+}
+
+a {
+	color: $secondary-color;
+	transition: color 200ms ease-in;
+
+	&:hover,
+	&:focus {
+		background-color: $secondary-color;
+		color: $tertiary-color;
+	}
+}
+
+.hidden-visually {
+	@include hidden-visually;
+}

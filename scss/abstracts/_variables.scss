@@ -1,0 +1,27 @@
+// Colors
+$primary-color: rgb(46, 46, 46);
+$secondary-color: rgb(128, 128, 128);
+$tertiary-color: rgb(255, 255, 255);
+$ternary-color: rgb(60, 60, 60);
+
+// Linear gradients
+$linear-gradient-primary: linear-gradient(
+	rgb(156, 156, 168),
+	rgb(223, 222, 222),
+	rgb(247, 247, 247),
+	rgb(255, 255, 255)
+);
+$linear-gradient-secondary: linear-gradient(
+	rgb(255, 255, 255),
+	rgb(223, 222, 222),
+	rgb(156, 156, 168)
+);
+
+// Borders
+$border-primary: 1px solid $secondary-color;
+
+// Border-radiuses
+$border-radius-primary: 5px;
+
+// Shadows
+$box-shadow-primary: -8px 8px 6px rgb(173, 173, 173);

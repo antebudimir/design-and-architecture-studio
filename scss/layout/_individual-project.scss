@@ -1,0 +1,48 @@
+/* compare with other pages */
+#project-1 {
+	padding: 1rem;
+	text-align: justify;
+}
+
+#project-gallery {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+}
+
+.photo {
+	border: $border-primary;
+	width: 5rem;
+	height: 5rem;
+}
+
+#project-description {
+	padding: 1rem 0 0;
+}
+
+// MQ
+// @media screen and (min-width: 1024px) {
+// 	#project-gallery {
+// 		align-items: center;
+// 	}
+
+// 	.slider-wrapper,
+// 	#project-description {
+// 		width: 40vw;
+// 	}
+
+// 	#project-description {
+// 		margin: 0 auto;
+// 	}
+
+// 	#project-1 {
+// 		padding: 0 5rem;
+// 	}
+// }
+
+// @media screen and (min-width: 1400px) {
+// 	#project-1 {
+// 		padding: 0 20rem 1rem;
+// 	}
+// }

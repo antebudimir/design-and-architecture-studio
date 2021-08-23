@@ -1,0 +1,72 @@
+#intro,
+.slide-1,
+.slide-2,
+.slide-3,
+.slide-4 {
+	@include background-properties;
+}
+
+#intro {
+	z-index: 20;
+	opacity: 1;
+	position: absolute;
+	width: 100vw;
+	height: 100vh;
+	background: url(../img/intro.jpg);
+}
+
+#split-screen {
+	@include respond-to-width(1024px) {
+		@include flex-layout(row, nowrap);
+	}
+}
+
+.slider,
+.content,
+.slide-1,
+.slide-2,
+.slide-3,
+.slide-4 {
+	width: 100vw;
+	height: 50vh;
+
+	@include respond-to-width(1024px) {
+		width: 50vw;
+		height: 100vh;
+	}
+}
+
+.slide-1 {
+	background: url(../img/full/first.jpg);
+}
+.slide-2 {
+	background: url(../img/full/second.jpg);
+}
+.slide-3 {
+	background: url(../img/full/third.jpg);
+}
+.slide-4 {
+	background: url(../img/full/fourth.jpg);
+}
+
+.content {
+	@include flex-column-center;
+}
+
+.front-menu {
+	@include flex-layout(row, nowrap);
+	margin-top: 2rem;
+}
+
+.front-item:not(:last-of-type) {
+	margin-right: 1rem;
+}
+
+.front-link {
+	border: $border-primary;
+	border-radius: $border-radius-primary;
+	display: block;
+	width: 8rem;
+	padding: 0.5rem 0;
+	text-align: center;
+}

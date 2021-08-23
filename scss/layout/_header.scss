@@ -1,0 +1,32 @@
+// Header
+header {
+	z-index: 13; // to cover the slider arrows
+	position: sticky;
+	top: 0;
+	@include flex-layout(row, nowrap);
+	@include flex-alignment(space-between, center);
+	padding: 2rem 1rem;
+	background: $linear-gradient-primary;
+
+	@include respond-to-width(1024px) {
+		padding: 3.5rem 5rem;
+	}
+
+	@include respond-to-width(1400px) {
+		padding: 3.5rem 20rem;
+	}
+}
+
+.logo {
+	// z-index: -1;
+	color: $ternary-color;
+	line-height: 0.8;
+
+	&:hover,
+	&:focus {
+		background-color: unset;
+		color: $ternary-color;
+		transform: scale(1.2);
+		transition: transform 300ms ease;
+	}
+}

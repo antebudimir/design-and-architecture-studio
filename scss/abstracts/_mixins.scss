@@ -1,0 +1,100 @@
+// FLEXBOX
+@mixin flex-layout($direction, $wrap) {
+	display: flex;
+	flex-flow: $direction $wrap;
+}
+
+@mixin flex-alignment($justify, $align) {
+	display: flex;
+	justify-content: $justify;
+	align-items: $align;
+}
+
+@mixin flex-row-center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@mixin flex-column-center {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+}
+
+@mixin sticky-footer {
+	display: flex;
+	flex-flow: column nowrap;
+	min-height: 100vh;
+}
+
+@mixin background-properties {
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
+
+// Round button
+@mixin round-button {
+	z-index: 1;
+	border-radius: 50%;
+	width: 3rem;
+	height: 3rem;
+
+	@include respond-to-width(1024px) {
+		width: 2.5rem;
+		height: 2.5rem;
+	}
+}
+
+// Animation
+@mixin pop-out-1 {
+	animation: enlarge-1 0.15s forwards linear;
+
+	@keyframes enlarge-1 {
+		to {
+			transform: scale(1.1);
+		}
+	}
+}
+
+@mixin pop-out-2 {
+	animation: enlarge-2 0.15s forwards linear;
+
+	@keyframes enlarge-2 {
+		to {
+			transform: scale(1.25);
+		}
+	}
+}
+
+// Visually hidden
+@mixin hidden-visually {
+	position: absolute;
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	overflow: hidden;
+	width: 1px;
+	height: 1px;
+	white-space: nowrap;
+}
+
+// Media queries
+@mixin respond-to-width($media) {
+	@media only screen and (min-width: $media) {
+		@content;
+	}
+}
+
+@mixin respond-to-height($media) {
+	@media only screen and (min-height: $media) {
+		@content;
+	}
+}
+
+@mixin respond-to-w-and-h($width, $height) {
+	@media only screen and (min-width: $width) and (min-height: $height) {
+		@content;
+	}
+}

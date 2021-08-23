@@ -1,0 +1,65 @@
+#about {
+	text-align: justify;
+}
+
+#about,
+#contact {
+	@include flex-layout(column, nowrap);
+	padding: 0 1rem;
+
+	@include respond-to-width(1024px) {
+		flex-direction: row;
+		padding: 0 5rem;
+	}
+
+	@include respond-to-width(1400px) {
+		padding: 0 20rem 1rem;
+	}
+}
+
+#contact {
+	@include respond-to-width(1024px) {
+		justify-content: center;
+	}
+}
+
+.russian-about,
+.russian-info,
+.english-info {
+	margin-bottom: 1rem;
+}
+
+.map {
+	@include respond-to-width(1024px) {
+		width: 100%;
+		max-width: 35rem;
+	}
+}
+
+#gmap {
+	border-radius: $border-radius-primary;
+	width: 100%;
+	height: 25rem;
+}
+
+#contact-info {
+	margin-top: 1rem;
+	text-align: center;
+
+	@include respond-to-width(1024px) {
+		@include flex-layout(column, nowrap);
+		justify-content: center;
+		margin-top: 0;
+	}
+}
+
+.english-about,
+#contact-info {
+	@include respond-to-width(1024px) {
+		margin-left: 3rem;
+	}
+}
+
+.space-me {
+	margin-left: 1rem;
+}

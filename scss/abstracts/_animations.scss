@@ -1,0 +1,59 @@
+// logo spin
+@keyframes spin {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+// menu
+@keyframes slideIn {
+	from {
+		top: -110%;
+	}
+}
+
+@keyframes slideOut {
+	to {
+		top: -110%;
+	}
+}
+
+// @keyframes slideIn {
+// 	from {
+// 		transform: rotateX(90deg);
+// 	}
+// 	to {
+// 		transform: rotateX(0deg);
+// 	}
+// }
+
+// @keyframes slideOut {
+// 	from {
+// 		transform: scale(1);
+// 	}
+// 	to {
+// 		transform: scale(0);
+// 	}
+// }
+
+// dotted menu
+// @keyframes rotateIn {
+// 	from {
+// 		transform: rotate(0deg);
+// 	}
+// 	to {
+// 		transform: rotate(360deg);
+// 	}
+// }
+
+// @keyframes rotateOut {
+// 	from {
+// 		transform: rotate(360deg);
+// 	}
+// 	to {
+// 		transform: rotate(0deg);
+// 	}
+// }

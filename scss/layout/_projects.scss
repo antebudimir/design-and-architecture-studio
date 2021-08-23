@@ -1,0 +1,41 @@
+#projects {
+	padding: 1rem 1rem 0;
+	text-align: center;
+}
+
+.grid-container {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 1rem 2rem;
+
+	@include respond-to-width(1024px) {
+		grid-template-columns: repeat(3, 1fr);
+		padding: 0 4rem 1rem;
+	}
+
+	@include respond-to-width(1400px) {
+		padding: 0 19rem 1rem;
+	}
+}
+
+.placeholder:hover,
+.placeholder-link:focus .placeholder-img {
+	transform: scale(1.05);
+	transition: transform 200ms ease-in;
+}
+
+.placeholder-link {
+	color: $ternary-color;
+
+	&:hover,
+	&:focus {
+		background-color: unset;
+		color: unset;
+	}
+}
+
+.placeholder-img {
+	border-radius: $border-radius-primary;
+	width: 100%;
+	height: auto;
+}

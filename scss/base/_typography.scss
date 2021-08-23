@@ -1,0 +1,99 @@
+// @font-faces:
+// Icons
+@font-face {
+	font-family: 'Icomoon';
+	src: url('../fonts/icomoon.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: block;
+}
+
+[class^='icon-'],
+[class*=' icon-'] {
+	font-family: 'Icomoon';
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+}
+
+// Fonts
+@font-face {
+	font-family: 'Lato';
+	src: url('../fonts/Lato-Regular.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Lato Bold';
+	src: url('../fonts/Lato-Bold.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Bitter';
+	src: url('../fonts/Bitter-Regular.woff') format('woff');
+}
+
+// All fonts declared:
+html {
+	font-family: 'Lato', sans-serif;
+}
+
+input,
+select,
+textarea,
+button {
+	color: inherit;
+	font-family: inherit;
+	font-size: inherit;
+}
+
+// titles that logo comprises of
+.title-big {
+	margin-bottom: 0.5rem;
+	font-family: 'Bitter', serif;
+	font-size: 1.5rem;
+	font-weight: 700;
+}
+
+.title-small {
+	font-family: 'Lato', sans-serif;
+	font-size: 1rem;
+	font-weight: 700;
+}
+
+h2 {
+	margin: 1rem 0;
+}
+
+h3,
+h4 {
+	margin: 1rem 0;
+}
+
+p {
+	line-height: 1.7;
+}
+
+a {
+	font-family: 'Lato Bold', sans-serif;
+	text-decoration: none;
+}
+
+footer {
+	@include respond-to-width(1024px) {
+		font-size: 1.2rem;
+	}
+}
+
+// ADD to the respective partials:
+
+// .icon-facebook:before {
+//   content: "\ea90";
+// }
+// .icon-whatsapp:before {
+//   content: "\ea93";
+// }
+// .icon-share2:before {
+//   content: "\ea82";
+// }
