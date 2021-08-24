@@ -64,6 +64,11 @@ button {
 
 h2 {
 	margin: 1rem 0;
+	font-size: 1.3rem;
+}
+
+.project-title {
+	margin-top: 0;
 }
 
 h3,
@@ -85,15 +90,3 @@ footer {
 		font-size: 1.2rem;
 	}
 }
-
-// ADD to the respective partials:
-
-// .icon-facebook:before {
-//   content: "\ea90";
-// }
-// .icon-whatsapp:before {
-//   content: "\ea93";
-// }
-// .icon-share2:before {
-//   content: "\ea82";
-// }
