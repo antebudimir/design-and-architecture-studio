@@ -1,6 +1,6 @@
 // Header
 header {
-	z-index: 13; // to cover the slider arrows
+	z-index: 13; // to cover the slider images
 	position: sticky;
 	top: 0;
 	@include flex-layout(row, nowrap);
@@ -18,7 +18,7 @@ header {
 }
 
 .logo {
-	// z-index: -1;
+	z-index: -1;
 	color: $ternary-color;
 	line-height: 0.8;
 
@@ -29,4 +29,8 @@ header {
 		transform: scale(1.2);
 		transition: transform 300ms ease;
 	}
+}
+
+#intro-body .logo {
+	z-index: unset;
 }
