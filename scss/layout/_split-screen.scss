@@ -12,7 +12,11 @@
 	position: absolute;
 	width: 100vw;
 	height: 100vh;
-	background: url(../img/intro.jpg);
+	background-image: url(../img/intro-mobile.jpg);
+
+	@include respond-to-width(1024px) {
+		background-image: url(../img/intro-desktop.jpg);
+	}
 }
 
 #split-screen {
@@ -37,16 +41,16 @@
 }
 
 .slide-1 {
-	background: url(../img/full/first.jpg);
+	background-image: url(../img/full/first.jpg);
 }
 .slide-2 {
-	background: url(../img/full/second.jpg);
+	background-image: url(../img/full/second.jpg);
 }
 .slide-3 {
-	background: url(../img/full/third.jpg);
+	background-image: url(../img/full/third.jpg);
 }
 .slide-4 {
-	background: url(../img/full/fourth.jpg);
+	background-image: url(../img/full/fourth.jpg);
 }
 
 .content {
