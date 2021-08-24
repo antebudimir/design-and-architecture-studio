@@ -35,40 +35,6 @@
 	background-size: cover;
 }
 
-// Round button
-@mixin round-button {
-	z-index: 1;
-	border-radius: 50%;
-	width: 3rem;
-	height: 3rem;
-
-	@include respond-to-width(1024px) {
-		width: 2.5rem;
-		height: 2.5rem;
-	}
-}
-
-// Animation
-@mixin pop-out-1 {
-	animation: enlarge-1 0.15s forwards linear;
-
-	@keyframes enlarge-1 {
-		to {
-			transform: scale(1.1);
-		}
-	}
-}
-
-@mixin pop-out-2 {
-	animation: enlarge-2 0.15s forwards linear;
-
-	@keyframes enlarge-2 {
-		to {
-			transform: scale(1.25);
-		}
-	}
-}
-
 // Visually hidden
 @mixin hidden-visually {
 	position: absolute;
