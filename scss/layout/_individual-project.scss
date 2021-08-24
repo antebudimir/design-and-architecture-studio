@@ -1,14 +1,17 @@
-/* compare with other pages */
 #project-1 {
-	padding: 1rem;
-	text-align: justify;
+	padding: 1rem 1rem 0;
+
+	@include respond-to-width(1024px) {
+		padding: 0 5rem;
+	}
+
+	@include respond-to-width(1400px) {
+		padding: 0 20rem 1rem;
+	}
 }
 
 #project-gallery {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	text-align: center;
+	@include flex-column-center;
 }
 
 .photo {
@@ -17,32 +20,22 @@
 	height: 5rem;
 }
 
-#project-description {
+#project-details {
 	padding: 1rem 0 0;
+	text-align: justify;
+
+	@include respond-to-width(1024px) {
+		margin: 0 auto;
+	}
 }
 
-// MQ
-// @media screen and (min-width: 1024px) {
-// 	#project-gallery {
-// 		align-items: center;
-// 	}
+.slider-wrapper {
+	width: 100%;
+}
 
-// 	.slider-wrapper,
-// 	#project-description {
-// 		width: 40vw;
-// 	}
-
-// 	#project-description {
-// 		margin: 0 auto;
-// 	}
-
-// 	#project-1 {
-// 		padding: 0 5rem;
-// 	}
-// }
-
-// @media screen and (min-width: 1400px) {
-// 	#project-1 {
-// 		padding: 0 20rem 1rem;
-// 	}
-// }
+.slider-wrapper,
+#project-details {
+	@include respond-to-width(1024px) {
+		width: 60%;
+	}
+}
