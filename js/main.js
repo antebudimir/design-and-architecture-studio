@@ -47,14 +47,10 @@
 			body.style.overflow = 'unset';
 		}
 	}
+})();
 
-	// Remove menu div & hamburger
-	if (window.innerWidth > 1023) {
-		const navigation = document.querySelector('#navigation'),
-			menu = document.querySelector('.menu');
-
-		navigation.appendChild(menu);
-		hamburger.remove();
-		menu.remove();
-	}
+// Date
+(function getCurrentDate() {
+	const currentYear = document.querySelector('#currentYear');
+	currentYear.innerText = new Date().getFullYear();
 })();
