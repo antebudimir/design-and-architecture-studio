@@ -4,9 +4,9 @@
 		logo = document.querySelector('.logo');
 
 	setTimeout(() => {
-		intro.style.transition = 'opacity 2000ms';
+		intro.style.transition = 'opacity 3000ms';
 		intro.style.opacity = '0';
-	}, 2000);
+	}, 3000);
 
 	// Give transition 4000ms to do its thing & then change z-index so that the buttons become functional
 	setTimeout(() => {
